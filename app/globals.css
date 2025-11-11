@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Aurora Background Animations */
+@keyframes aurora-flow {
+  0%, 100% { 
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.5;
+  }
+  33% { 
+    transform: translate(30%, -20%) scale(1.1);
+    opacity: 0.7;
+  }
+  66% { 
+    transform: translate(-20%, 30%) scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+@keyframes aurora-2 {
+  0%, 100% { 
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.4;
+  }
+  50% { 
+    transform: translate(-30%, 20%) scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+@keyframes aurora-3 {
+  0%, 100% { 
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.45;
+  }
+  50% { 
+    transform: translate(20%, -30%) scale(1.15);
+    opacity: 0.65;
+  }
+}
+
+/* Apply animations */
+.animate-aurora-flow {
+  animation: aurora-flow 20s ease-in-out infinite;
+}
+
+.animate-aurora-2 {
+  animation: aurora-2 15s ease-in-out infinite;
+}
+
+.animate-aurora-3 {
+  animation: aurora-3 25s ease-in-out infinite;
+}
+
+/* Ensure blur is working */
+.blur-extreme {
+  filter: blur(150px);
+}

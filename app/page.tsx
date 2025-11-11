@@ -12,6 +12,9 @@ const icons = {
   Linkedin: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>,
   Twitter: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>,
   Facebook: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>,
+  Behance: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 12C16 14.21 14.21 16 12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12Z"></path><path d="M19 12c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7 7-3.13 7-7Z"></path><path d="M16 12H19"></path><path d="M5 12H8"></path><path d="M12 5V8"></path><path d="M12 16v3"></path></svg>,
+  Instagram: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>,
+  Pinterest: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.16 2.05c-3.15 0-5.71 2.56-5.71 5.71 0 1.25.4 2.4 1.09 3.32.22.28-.01.69-.32.74l-1.92.3c-.2.03-.38-.13-.42-.32C4.3 9.4 4 8.5 4 7.76c0-4.43 3.57-8 8-8s8 3.57 8 8c0 2.21-1.03 4.2-2.6 5.5l-.23.19c-.3.26-.77.17-1.02-.13-.25-.3-.16-.77.13-1.02l.23-.19c1.3-1.09 2.07-2.7 2.07-4.48 0-3.32-2.68-6-6-6z"></path><path d="M12 12c-1.38 0-2.5 1.12-2.5 2.5v4.5c0 .55.45 1 1 1s1-.45 1-1v-4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v4.5c0 .55.45 1 1 1s1-.45 1-1v-4.5c0-1.38-1.12-2.5-2.5-2.5z"></path></svg>,
   Briefcase: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>,
   Code: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>,
   Smartphone: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>,
@@ -42,6 +45,7 @@ const icons = {
   Figma: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 12m-3 0a3 3 0 1 0 6 0 3 3 0 1 0-6 0"></path><path d="M12 15a3 3 0 1 0 0-6"></path><path d="M12 9a3 3 0 1 0 0 6"></path><path d="M15 12a3 3 0 1 0-6 0"></path><path d="M12 12a3 3 0 1 0 0-6"></path><path d="M9 12a3 3 0 1 0 6 0"></path><path d="M15 12a3 3 0 1 0 0 6"></path><path d="M12 15a3 3 0 1 0 0-6"></path><path d="M12 9a3 3 0 1 0 0 6"></path><path d="M16.8 7.2a3 3 0 1 0-4.8 4.8 3 3 0 1 0 4.8-4.8z"></path></svg>,
   React: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="12" rx="11" ry="4.2"></ellipse><ellipse cx="12" cy="12" rx="11" ry="4.2" transform="rotate(60 12 12)"></ellipse><ellipse cx="12" cy="12" rx="11" ry="4.2" transform="rotate(120 12 12)"></ellipse><circle cx="12" cy="12" r="1.5"></circle></svg>,
   NodeJs: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.23a2.02 2.02 0 0 0-1.28.48L5.2 6.69A2 2 0 0 0 4 8.41v7.18a2 2 0 0 0 1.2 1.72l5.52 3.98a2.02 2.02 0 0 0 2.56 0l5.52-3.98A2 2 0 0 0 20 15.59V8.41a2 2 0 0 0-1.2-1.72l-5.52-3.98A2.02 2.02 0 0 0 12 2.23z"></path><path d="M10.2 11.26v1.48a1.65 1.65 0 0 0 2.6 1.4L15 12l-2.2-1.14a1.65 1.65 0 0 0-2.6 1.4z"></path></svg>,
+  Lightbulb: () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.7.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>,
 };
 
 // Create a Type for the icon names
@@ -71,7 +75,7 @@ const Header = ({ activeSection }: { activeSection: string }) => {
 
   return (
     // Updated Header classes: removed relative, z-50. Added max-w-7xl
-    <header className="relative bg-gray-900 bg-opacity-70 backdrop-blur-md rounded-full border border-white/10 max-w-7xl mx-auto">
+    <header className="relative bg-gray-900 bg-opacity-40 backdrop-blur-md rounded-full border border-white/10 max-w-7xl mx-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Updated padding and height */}
         <div className="flex justify-between items-center h-16 px-6">
@@ -134,7 +138,7 @@ const Header = ({ activeSection }: { activeSection: string }) => {
 
       {/* Mobile Menu - Updated to lg breakpoint */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-gray-900 bg-opacity-95 absolute top-full left-0 right-0 rounded-b-2xl shadow-lg border border-white/10">
+        <div className="lg:hidden bg-gray-900 bg-opacity-50 backdrop-blur-md absolute top-full left-0 right-0 rounded-b-2xl shadow-lg border border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <a
@@ -169,16 +173,19 @@ const Header = ({ activeSection }: { activeSection: string }) => {
 // --- Hero Component ---
 const Hero = () => {
   const socialLinks: { name: string; icon: IconName; url: string }[] = [
-    { name: "Github", icon: "Github", url: "#" },
-    { name: "Linkedin", icon: "Linkedin", url: "#" },
-    { name: "Twitter", icon: "Twitter", url: "#" },
-    { name: "Facebook", icon: "Facebook", url: "#" },
+    { name: "Github", icon: "Github", url: "https://github.com/rafijuljisan/" },
+    { name: "Linkedin", icon: "Linkedin", url: "https://www.linkedin.com/in/jisan-sheikh-5828441b3/" },
+    { name: "Twitter", icon: "Twitter", url: "https://x.com/Jisan01741770/" },
+    { name: "Facebook", icon: "Facebook", url: "https://www.facebook.com/jesan0195/" },
+    { name: "Behance", icon: "Behance", url: "https://www.behance.net/mdjs" },
+    { name: "Instagram", icon: "Instagram", url: "https://www.instagram.com/jesan0195/" },
+    { name: "Pinterest", icon: "Pinterest", url: "https://www.pinterest.com/rafijuljisan/" }, // Updated icon name:}
   ];
 
   return (
     // Updated padding-top to 'pt-32' to account for the new sticky header
     // --- UPDATED THIS LINE ---
-    <section id="home" className="min-h-screen flex items-center bg-black text-white">
+    <section id="home" className="min-h-screen flex items-center text-white">
       {/* --- HEADER REMOVED FROM HERE --- */}
       
       {/* --- UPDATED THIS LINE (removed mt-16, added padding) --- */}
@@ -187,7 +194,7 @@ const Hero = () => {
           {/* Left Side: Text Content */}
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-              Full Stack Developer & Visual Designer
+              Web Developer & Visual Designer
             </h1>
             <p className="text-lg text-gray-300 mb-6">
               Performance-oriented developer and designer, dedicated to optimizing
@@ -207,7 +214,7 @@ const Hero = () => {
               ))}
             </div>
             <a
-              href="#cv.pdf" // Placeholder link
+              href="./Jisan Sheikh Resome_CV.pdf" // Placeholder link
               download
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-black bg-lime-400 hover:bg-lime-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 transition-all transform hover:scale-105"
             >
@@ -227,8 +234,8 @@ const Hero = () => {
               </div>
               {/* Optional: Floating skill tags like in the image */}
               <SkillTag name="Laravel" position="top-10 -left-10" />
-              <SkillTag name="React" position="top-1/3 -right-12" />
-              <SkillTag name="Android" position="bottom-1/3 -left-16" />
+              <SkillTag name="WordPress" position="top-1/3 -right-12" />
+              <SkillTag name="Android Apps" position="bottom-1/3 -left-16" />
               <SkillTag name="Photoshop" position="bottom-10 -right-8" />
             </div>
           </div>
@@ -245,7 +252,7 @@ type SkillTagProps = {
 };
 const SkillTag = ({ name, position }: SkillTagProps) => (
   <div
-    className={`absolute ${position} bg-gray-800 bg-opacity-70 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full shadow-lg hidden lg:block`}
+    className={`absolute ${position} bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 text-white text-sm px-4 py-2 rounded-full shadow-lg hidden lg:block`}
   >
     {name}
   </div>
@@ -254,11 +261,11 @@ const SkillTag = ({ name, position }: SkillTagProps) => (
 // --- Stats Component ---
 const Stats = () => {
   return (
-    <section id="about-me" className="py-16 bg-black text-white">
+    <section id="about-me" className="py-16 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Info Card */}
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800 shadow-xl">
+          <div className="bg-gray-900 bg-opacity-50 backdrop-blur-md border-white/10 p-6 rounded-lg border border-gray-800 shadow-xl">
             <h3 className="text-2xl font-semibold mb-6">Contact Info</h3>
             <div className="space-y-4">
               <InfoItem
@@ -282,7 +289,7 @@ const Stats = () => {
           </div>
 
           {/* Services Card */}
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800 shadow-xl">
+          <div className="bg-gray-900 bg-opacity-50 backdrop-blur-md border-white/10 p-6 rounded-lg border border-gray-800 shadow-xl">
             <h3 className="text-2xl font-semibold mb-6">My Services</h3>
             <div className="space-y-4">
               <ServiceItem
@@ -317,7 +324,7 @@ type InfoItemProps = {
 
 const InfoItem = ({ icon, label, value, href }: InfoItemProps) => (
   <div className="flex items-center">
-    <div className="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
+    <div className="flex-shrink-0 w-12 h-12 bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-full flex items-center justify-center">
       <Icon name={icon} className="w-6 h-6 text-lime-400" />
     </div>
     <div className="ml-4">
@@ -344,7 +351,7 @@ type ServiceItemProps = {
 
 const ServiceItem = ({ icon, title, description }: ServiceItemProps) => (
   <div className="flex items-start">
-    <div className="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
+    <div className="flex-shrink-0 w-12 h-12 bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-lg flex items-center justify-center">
       <Icon name={icon} className="w-6 h-6 text-lime-400" />
     </div>
     <div className="ml-4">
@@ -372,9 +379,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-16 bg-black text-white">
+    <section id="skills" className="py-16 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gray-900 p-6 md:p-8 rounded-lg border border-gray-800 shadow-xl">
+        <div className="bg-gray-900 bg-opacity-50 backdrop-blur-md border-white/10 p-6 md:p-8 rounded-lg border border-gray-800 shadow-xl">
           <h2 className="text-3xl font-bold text-center mb-8">My Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
             {skills.map((skill) => (
@@ -460,7 +467,7 @@ const Resume = () => {
 
   return (
     // --- FIXED: ADDED ID FOR SCROLL-SPY ---
-    <section id="resume" className="py-16 bg-black text-white">
+    <section id="resume" className="py-16 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Experience Column */}
@@ -505,7 +512,7 @@ const Timeline = ({ items }: TimelineProps) => (
         {/* Timeline Dot */}
         <div className="absolute -left-8 top-1.5 w-4 h-4 bg-lime-400 rounded-full border-4 border-gray-900"></div>
         {/* Date Badge */}
-        <span className="inline-block bg-gray-800 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full mb-2">
+        <span className="inline-block bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 text-gray-300 text-xs font-semibold px-3 py-1 rounded-full mb-2">
           <Icon name="Calendar" className="inline-block w-3 h-3 mr-1.5" />
           {item.date}
         </span>
@@ -557,7 +564,8 @@ const Technologies = () => {
 
   return (
     // --- FIXED: ADDED ID FOR SCROLL-SPY ---
-    <section id="technologies" className="relative overflow-hidden py-16 bg-gradient-to-b from-black to-gray-900 text-white">
+    
+    <section id="technologies" className="relative overflow-hidden py-16 text-white">
       
       {/* --- WRAP EXISTING CONTENT in relative z-10 container --- */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -599,7 +607,7 @@ const Technologies = () => {
         {/* A more standard grid layout (easier to implement) */}
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 mt-20">
             {techs.map((tech) => (
-                 <div key={tech.name} className="flex flex-col items-center p-4 bg-gray-800 rounded-lg border border-gray-700 hover:bg-gray-700 transition-all transform hover:-translate-y-1">
+                 <div key={tech.name} className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-lg border border-gray-700 hover:bg-gray-700 transition-all transform hover:-translate-y-1">
                     <Icon name={tech.icon} className="w-12 h-12 text-lime-400 mb-2" />
                     <span className="text-sm font-medium">{tech.name}</span>
                 </div>
@@ -615,7 +623,7 @@ const Technologies = () => {
           {toolsList.map((tool) => (
             <div 
               key={tool.name} 
-              className="flex flex-col items-center p-4 bg-gray-900 rounded-lg border border-gray-800 hover:bg-gray-800 transition-all transform hover:-translate-y-1"
+              className="flex flex-col items-center p-4 bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-lg border border-gray-800 hover:bg-gray-800 transition-all transform hover:-translate-y-1"
               title={tool.name} // Add tooltip for the name
             >
               <Icon name={tool.icon} className="w-10 h-10 text-lime-400" />
@@ -638,7 +646,7 @@ type TechIconProps = {
 };
 
 const TechIcon = ({ name, icon }: TechIconProps) => (
-    <div className="flex flex-col items-center p-3 bg-gray-800 rounded-full border border-gray-700 shadow-lg">
+    <div className="flex flex-col items-center p-3 bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-full border border-gray-700 shadow-lg">
         <Icon name={icon} className="w-8 h-8 text-lime-400" />
     </div>
 );
@@ -686,16 +694,7 @@ const Projects = () => {
       tags: ["Next.js", "React", "Tailwind CSS", "Stripe"],
       imgSrc: "./School Management apps.jpg.png", // <-- Fixed: removed trailing slash
       sourceCodeUrl: "#",
-      liveSiteUrl: "escl.openwindowbd.com/login/",
-      layout: '1-col',
-    },
-    {
-      year: "2024",
-      title: "Social Media Dashboard",
-      description: "Frontend for a social media analytics dashboard, featuring various chart implementations and data visualization techniques.",
-      tags: ["React", "Tailwind CSS", "Charts.js"],
-      imgSrc: "https://placehold.co/600x400/777/FFF?text=Social+Dashboard",
-      sourceCodeUrl: "#",
+      liveSiteUrl: "https://escl.openwindowbd.com/login/",
       layout: '1-col',
     },
     {
@@ -714,18 +713,8 @@ const Projects = () => {
       description: "A full-stack task management application with user authentication, real-time database sync using Firebase, and drag-and-drop functionality.",
       tags: ["React", "Firebase", "Tailwind CSS"],
       imgSrc: "./Wordpress ecommerce web.jpg.png",
-      liveSiteUrl: "#",
+      sourceCodeUrl: "https://github.com/rafijuljisan/Chrome-Task-Extension",
       layout: '2-col',
-    },
-    {
-      year: "2023",
-      title: "Portfolio CMS",
-      description: "A headless CMS integration for managing portfolio content, built with Next.js and a backend of your choice.",
-      tags: ["Content Management", "Next.js", "Tailwind CSS"],
-      imgSrc: "https://placehold.co/600x400/888/FFF?text=Portfolio+CMS",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "#",
-      layout: '1-col',
     },
     // --- ADDED MISSING PROJECTS BELOW ---
     {
@@ -735,7 +724,7 @@ const Projects = () => {
       tags: ["WordPress", "Plugin", "PHP", "JavaScript"],
       imgSrc: "./Automatic Photocard downlooad plugin.jpg.png",
       sourceCodeUrl: "#",
-      liveSiteUrl: "#",
+      liveSiteUrl: "https://bhorerdut.com",
       layout: '1-col',
     },
     {
@@ -744,8 +733,7 @@ const Projects = () => {
       description: "A Google Chrome extension to improve productivity by automatically reloading recent or pinned tabs at user-defined intervals.",
       tags: ["Chrome Extension", "JavaScript", "HTML", "CSS"],
       imgSrc: "./Automatic Recent Tab Loader for Chrome.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "#",
+      sourceCodeUrl: "https://github.com/rafijuljisan/Recent-Tab-Loader-Plugin",
       layout: '1-col',
     },
     {
@@ -755,8 +743,8 @@ const Projects = () => {
       tags: ["Web App", "Laravel", "React", "MySQL"],
       imgSrc: "./Consultancy Management apps.jpg.png",
       sourceCodeUrl: "#",
-      liveSiteUrl: "#",
-      layout: '2-col',
+      liveSiteUrl: "https://app.openwindowbd.com/",
+      layout: '1-col',
     },
     {
       year: "2023",
@@ -765,7 +753,7 @@ const Projects = () => {
       tags: ["WordPress", "Elementor", "Responsive Design"],
       imgSrc: "./Education Consultancy Website.jpg.png",
       sourceCodeUrl: "#",
-      liveSiteUrl: "#",
+      liveSiteUrl: "https://openwindowbd.com",
       layout: '1-col',
     },
     {
@@ -775,8 +763,8 @@ const Projects = () => {
       tags: ["React", "Charts.js", "Tailwind CSS", "FinTech"],
       imgSrc: "./Finance management.jpg.png",
       sourceCodeUrl: "#",
-      liveSiteUrl: "#",
-      layout: '1-col',
+      liveSiteUrl: "https://ac.openwindowbd.com",
+      layout: '2-col',
     },
     {
       year: "2023",
@@ -785,7 +773,7 @@ const Projects = () => {
       tags: ["News", "WordPress", "PHP", "E-Paper"],
       imgSrc: "./News paper site.jpg.png",
       sourceCodeUrl: "#",
-      liveSiteUrl: "#",
+      liveSiteUrl: "https://news.openwindowbd.com",
       layout: '1-col',
     },
     {
@@ -795,7 +783,7 @@ const Projects = () => {
       tags: ["Next.js", "React", "Tailwind CSS", "Portfolio"],
       imgSrc: "./Next JS Portfolio site.jpg.png",
       sourceCodeUrl: "#",
-      liveSiteUrl: "#",
+      liveSiteUrl: "https://jisan.technomenia.com",
       layout: '1-col',
     },
     {
@@ -805,7 +793,7 @@ const Projects = () => {
       tags: ["WordPress", "Portfolio", "CSS", "PHP"],
       imgSrc: "./Wordpress portfolio site.jpg.png",
       sourceCodeUrl: "#",
-      liveSiteUrl: "#",
+      liveSiteUrl: "https://jisan.technomenia.com",
       layout: '1-col',
     }
   ];
@@ -813,7 +801,7 @@ const Projects = () => {
   // --- REMOVED categories and filteredProjects logic ---
 
   return (
-    <section id="projects" className="py-16 bg-gray-900 text-white">
+    <section id="projects" className="py-16 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-4">
           My Recent Works
@@ -861,7 +849,7 @@ type ProjectCardProps = {
 
 // --- UPDATED ProjectCard component ---
 const ProjectCard = ({ project, className = '' }: ProjectCardProps) => (
-  <div className={`group bg-gray-800 rounded-lg overflow-hidden border border-gray-700 shadow-xl flex flex-col ${className}`}>
+  <div className={`group bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-lg overflow-hidden border border-gray-700 shadow-xl flex flex-col ${className}`}>
     {/* --- ADDED CONDITIONAL RENDERING FOR IMAGE --- */}
     {project.imgSrc && (
       <div className="overflow-hidden">
@@ -916,7 +904,7 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => (
 // --- Contact Teaser Component ---
 const ContactTeaser = () => {
   return (
-    <section id="contact" className="py-16 bg-gradient-to-t from-black to-gray-900 text-white">
+    <section id="contact" className="py-16 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">
           Let's Build Something Great!
@@ -953,7 +941,7 @@ type ContactTeaserCardProps = {
 };
 
 const ContactTeaserCard = ({ icon, title, value, href }: ContactTeaserCardProps) => (
-  <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-xl text-center flex flex-col items-center">
+  <div className="bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 p-6 rounded-lg border border-gray-700 shadow-xl text-center flex flex-col items-center">
     <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mb-4 border-2 border-lime-400">
       <Icon name={icon} className="w-8 h-8 text-lime-400" />
     </div>
@@ -972,7 +960,7 @@ const Blogs = () => {
   const blogs = [
     {
       title: "Why Laravel is a Great Choice for Web Apps",
-      imgSrc: "https://www.syntacticsinc.com/wp-content/uploads/2025/03/Syntactics-DDD-Blog-March-2025-Laravel-12-Why-Its-the-Best-Choice-for-Modern-Web-Apps-1.png",
+      imgSrc: "https://taglineinfotech.com/wp-content/uploads/2024/02/What-is-Ruby-on-Rails-Why-is-it-used-for-Web-Applications.webp",
       date: "Nov 10, 2025",
     },
     {
@@ -988,7 +976,7 @@ const Blogs = () => {
   ];
 
   return (
-    <section id="writings" className="py-16 bg-black text-white">
+    <section id="writings" className="py-16 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-4">Latest Blogs</h2>
         <p className="text-lg text-gray-400 text-center mb-12 max-w-2xl mx-auto">
@@ -1017,7 +1005,7 @@ type BlogCardProps = {
 };
 
 const BlogCard = ({ blog }: BlogCardProps) => (
-    <div className="group bg-gray-900 rounded-lg overflow-hidden border border-gray-800 shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <div className="group bg-gray-900 bg-opacity-50 backdrop-blur-md border-white/10 rounded-lg overflow-hidden border border-gray-800 shadow-xl transition-all duration-300 transform hover:-translate-y-1">
         <div className="overflow-hidden">
             <img
             src={blog.imgSrc}
@@ -1045,9 +1033,9 @@ const BlogCard = ({ blog }: BlogCardProps) => (
 // --- Footer Component ---
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400">
+    <footer className=" text-gray-400">
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-purple-900 via-gray-900 to-black py-16">
+      <div className=" py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to start your project?
@@ -1082,65 +1070,146 @@ const Footer = () => {
     </footer>
   );
 };
+// --- ADD THIS NEW PRELOADER COMPONENT ---
+// --- REPLACE OLD PRELOADER WITH THIS ---
+const Preloader = ({ step, isFading }: { step: number; isFading: boolean }) => {
+  const bootLines = [
+    "Booting JisanOS v2.5...",
+    "Initializing creative core...",
+    "Loading developer modules... [OK]",
+    "Compiling design assets... [OK]",
+    "Connecting to the matrix... [CONNECTED]",
+    "Welcome."
+  ];
 
+  return (
+    <div
+      className={`fixed inset-0 z-[100] flex items-center justify-center bg-black
+                  text-lime-400 font-mono
+                  transition-opacity duration-500
+                  ${isFading ? 'opacity-0' : 'opacity-100'}`}
+    >
+      <div className="w-full max-w-lg px-4">
+        {bootLines.map((line, index) => (
+          // Conditionally render each line based on the 'step'
+          <div key={index} className={`flex items-center ${step > index ? 'opacity-100' : 'opacity-0'}`}>
+            <span className="text-gray-400 mr-2">&gt;</span>
+            <p className="text-sm md:text-base">{line}</p>
+            {/* Show blinking cursor on the last visible line */}
+            {step === index + 1 && step < bootLines.length && (
+              <span className="w-2 h-4 bg-lime-400 animate-blink ml-2"></span>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+// --- END OF NEW PRELOADER ---
 // --- Main App Component ---
 // This is what you would put in your page.jsx or index.js
+// --- Main App Component ---
+// This is what you would put in your page.jsx or index.js
+// --- Main App Component ---
+// --- Main App Component ---
 export default function App() {
   // Add state to track the active section
   const [activeSection, setActiveSection] = useState("home");
+  
+  // --- UPDATED PRELOADER STATE (now uses 'step') ---
+  const [step, setStep] = useState(0); // Current step of the boot sequence
+  const [isLoading, setIsLoading] = useState(true);
+  const [isFading, setIsFading] = useState(false);
 
   // Add a scroll listener to update the active section
   useEffect(() => {
+    // ... (Your existing scroll listener logic stays the same)
     const handleScroll = () => {
       const sections = document.querySelectorAll('section[id]');
-      let currentSection = 'home'; // Default to 'home'
-
+      let currentSection = 'home';
       sections.forEach(section => {
         const htmlSection = section as HTMLElement;
         const sectionTop = htmlSection.offsetTop;
         const sectionHeight = htmlSection.offsetHeight;
-        
-        // Offset to trigger the change a bit before the section top
-        // (150px = approx header height + padding)
         const offset = 150; 
-
         if (window.scrollY >= sectionTop - offset && 
             window.scrollY < sectionTop + sectionHeight - offset) {
           currentSection = section.id;
         }
       });
-
       setActiveSection(currentSection);
     };
-
-    // Add the event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
-    
-    // Run it once on load to set the initial state
     handleScroll();
-
-    // Clean up the event listener when the component unmounts
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []); // Empty dependency array ensures this runs only once
+  }, []);
+
+  // --- UPDATED PRELOADER TIMER (controls the 'step') ---
+  useEffect(() => {
+    const totalSteps = 6; // Total number of lines in 'bootLines'
+    const stepDuration = 500; // 0.5 seconds per line
+
+    const interval = setInterval(() => {
+      setStep(prevStep => {
+        if (prevStep >= totalSteps) {
+          clearInterval(interval);
+          
+          // Hold at the end for a moment, then fade
+          setTimeout(() => {
+            setIsFading(true);
+          }, 300); // Hold for 0.3s
+
+          // Remove preloader from DOM after fade-out
+          setTimeout(() => {
+            setIsLoading(false);
+          }, 800); // 0.3s hold + 0.5s fade
+
+          return totalSteps;
+        }
+        return prevStep + 1;
+      });
+    }, stepDuration);
+
+    // Clean up timers
+    return () => {
+      clearInterval(interval);
+    };
+  }, []); // Empty dependency array ensures this runs only once on load
 
   return (
-    // Ensure you have Tailwind's dark mode enabled in your tailwind.config.js
-    // (e.g., `darkMode: 'class'`) and add `className="dark"` to your <html> tag.
-    // Or, just build with dark styles directly as done here.
+    // Your bg-black class is kept as requested
     <div className="bg-black min-h-screen relative overflow-hidden">
-      {/* --- ADD FULL-SCREEN ANIMATED BACKGROUND --- */}
-      {/* Added overflow-hidden to the container */}
-      <div className="fixed inset-0 z-0 opacity-40 overflow-hidden">
-        {/* This div is now 200% tall and positioned at the top.
-          The 'aurora-flow' animation moves it from Y=0% to Y=-100%,
-          which scrolls the entire 200% height up, then it repeats.
-        */}
-        <div className="absolute top-0 left-0 right-0 h-[200%] 
-                        bg-[radial-gradient(ellipse_at_center,_rgba(124,58,237,0.2)_0%,_rgba(0,0,0,0)_70%)]
-                        animate-aurora-flow">
-        </div>
+
+      {/* --- UPDATED PRELOADER (passes 'step') --- */}
+      {isLoading && <Preloader step={step} isFading={isFading} />}
+
+      {/* --- AURORA BACKGROUND (SIMPLIFIED & WORKING) --- */}
+      <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        {/* Aurora Layer 1 - Purple */}
+        <div 
+          className="absolute top-[5%] left-[15%] w-[800px] h-[800px] bg-purple-600 opacity-40 rounded-full animate-aurora-flow"
+          style={{ filter: 'blur(120px)' }}
+        />
+        
+        {/* Aurora Layer 2 - Blue/Indigo */}
+        <div 
+          className="absolute top-[25%] right-[10%] w-[900px] h-[900px] bg-indigo-600 opacity-30 rounded-full animate-aurora-2"
+          style={{ filter: 'blur(130px)' }}
+        />
+        
+        {/* Aurora Layer 3 - Violet */}
+        <div 
+          className="absolute bottom-[5%] left-[40%] w-[1000px] h-[1000px] bg-violet-600 opacity-35 rounded-full animate-aurora-3"
+          style={{ filter: 'blur(140px)' }}
+        />
+
+        {/* Aurora Layer 4 - Pink/Fuchsia (for extra glow) */}
+        <div 
+          className="absolute top-[45%] left-[5%] w-[700px] h-[700px] bg-fuchsia-600 opacity-25 rounded-full animate-aurora-flow"
+          style={{ filter: 'blur(110px)', animationDelay: '7s' }}
+        />
       </div>
-      {/* --- END OF BACKGROUND --- */}
+      {/* --- END OF AURORA BACKGROUND --- */}
 
       {/* --- WRAP ALL PAGE CONTENT TO BE ON TOP --- */}
       <div className="relative z-10">
@@ -1155,7 +1224,6 @@ export default function App() {
           <Stats />
           <Skills />
           <Resume />
-          {/* --- FIXED: REMOVED DUPLICATE <Tools /> CALL --- */}
           <Technologies />
           <Projects />
           <ContactTeaser />
