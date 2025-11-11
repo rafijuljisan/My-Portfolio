@@ -71,7 +71,7 @@ const Icon = ({ name, className }: IconProps) => {
 const Header = ({ activeSection }: { activeSection: string }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   // --- FIXED: ADDED MISSING NAV ITEMS ---
-  const navItems = ["Home", "About Me", "Skills", "Resume", "Technologies", "Projects", "Writings", "Contact"];
+  const navItems = [ "About Me", "Skills", "Resume", "Technologies", "Projects", "Design", "Writings", "Contact"];
 
   return (
     // Updated Header classes: removed relative, z-50. Added max-w-7xl
@@ -882,7 +882,7 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => (
 );
 // --- ADD THIS NEW COMPONENT ---
 const DesignPortfolioCTA = () => (
-  <section className="py-16 text-white">
+  <section id="design" className="py-16 text-white">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       {/* Use the same card style for consistency */}
       <div className="bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-lg border border-gray-700 shadow-xl flex flex-col md:flex-row overflow-hidden">
