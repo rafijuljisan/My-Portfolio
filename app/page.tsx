@@ -659,143 +659,123 @@ const Projects = () => {
   // --- REPLACED 'projects' with 'allProjects' and expanded ---
   const allProjects: ProjectProps[] = [
     {
-      year: "2025",
-      title: "School Website",
-      description: "A modern, responsive website for a local school, featuring event management, news updates, and an integrated blog using Next.js and MDX for content management.",
-      tags: ["Next.js", "React", "Tailwind CSS", "MDX"],
-      imgSrc: "./School Website.png",
-      liveSiteUrl: "https://escl.openwindowbd.com/",
-      layout: '2-col',
-    },
-    {
-      year: "2025",
-      title: "Task Managenment extension for chrome",
-      description: "A Chrome extension that helps users manage their tasks efficiently with features like task categorization, deadlines, and reminders, built using React and Tailwind CSS.",
-      tags: ["Full-Stack", "Next.js", "React", "Tailwind CSS", "MDX"],
-      imgSrc: "./Task Management extension for chrome.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://technomenia.com/",
-      layout: '1-col',
-    },
-    {
-      year: "2023",
-      title: "WordPress News Paper Website",
-      description: "A dynamic news website built with WordPress, featuring custom post types, categories, and a user-friendly interface for easy content management and reader engagement.",
-      tags: ["Next.js", "React", "Tailwind CSS"],
-      imgSrc: "./News site.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://bhorerdut.com/",
-      layout: '1-col',
-    },
-    {
-      year: "2024",
-      title: "Complete School Management apps",
-      description: "A comprehensive school management system with modules for student information, attendance, grading, and fee management, built with a focus on usability and scalability.",
-      tags: ["Next.js", "React", "Tailwind CSS", "Stripe"],
-      imgSrc: "./School Management apps.jpg.png", // <-- Fixed: removed trailing slash
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://escl.openwindowbd.com/login/",
-      layout: '1-col',
-    },
-    {
-      year: "2025",
-      title: "Wordpress E-commerce Site",
-      description: "E-commerce website built on WordPress with custom themes and plugins, optimized for performance and SEO, providing a seamless shopping experience.",
-      tags: ["Full-Stack", "Next.js", "React", "Tailwind CSS", "MDX"],
-      imgSrc: "./Wordpress ecommerce site.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://technomenia.com/",
-      layout: '1-col',
-    },
-    {
-      year: "2023",
-      title: "Task Management App",
-      description: "A full-stack task management application with user authentication, real-time database sync using Firebase, and drag-and-drop functionality.",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      imgSrc: "./Wordpress ecommerce web.jpg.png",
-      sourceCodeUrl: "https://github.com/rafijuljisan/Chrome-Task-Extension",
-      layout: '2-col',
-    },
-    // --- ADDED MISSING PROJECTS BELOW ---
-    {
-      year: "2024",
-      title: "Automatic Photocard Download Plugin",
-      description: "A custom plugin, likely for WordPress, to automatically generate and allow users to download photocards based on user data.",
-      tags: ["WordPress", "Plugin", "PHP", "JavaScript"],
-      imgSrc: "./Automatic Photocard downlooad plugin.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://bhorerdut.com",
-      layout: '1-col',
-    },
-    {
-      year: "2024",
-      title: "Automatic Recent Tab Loader for Chrome",
-      description: "A Google Chrome extension to improve productivity by automatically reloading recent or pinned tabs at user-defined intervals.",
-      tags: ["Chrome Extension", "JavaScript", "HTML", "CSS"],
-      imgSrc: "./Automatic Recent Tab Loader for Chrome.png",
-      sourceCodeUrl: "https://github.com/rafijuljisan/Recent-Tab-Loader-Plugin",
-      layout: '1-col',
-    },
-    {
-      year: "2024",
-      title: "Consultancy Management App",
-      description: "A comprehensive web application for consultancy firms to manage clients, appointments, payments, and visa processing statuses.",
-      tags: ["Web App", "Laravel", "React", "MySQL"],
-      imgSrc: "./Consultancy Management apps.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://app.openwindowbd.com/",
-      layout: '1-col',
-    },
-    {
-      year: "2023",
-      title: "Education Consultancy Website",
-      description: "A professional, responsive website for an education consultancy, showcasing services, partner universities, and student testimonials.",
-      tags: ["WordPress", "Elementor", "Responsive Design"],
-      imgSrc: "./Education Consultancy Website.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://openwindowbd.com",
-      layout: '1-col',
-    },
-    {
-      year: "2025",
-      title: "Finance Management Dashboard",
-      description: "A data-driven finance dashboard to track income, expenses, and investments, featuring charts and downloadable reports.",
-      tags: ["React", "Charts.js", "Tailwind CSS", "FinTech"],
-      imgSrc: "./Finance management.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://ac.openwindowbd.com",
-      layout: '2-col',
-    },
-    {
-      year: "2023",
-      title: "E-Paper News Website",
-      description: "A digital newspaper website designed to mimic the look of a physical newspaper, with features for daily editions and archives.",
-      tags: ["News", "WordPress", "PHP", "E-Paper"],
-      imgSrc: "./News paper site.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://news.openwindowbd.com",
-      layout: '1-col',
-    },
-    {
-      year: "2024",
-      title: "Next.js Portfolio Site",
-      description: "A modern, fast, and responsive personal portfolio website built using Next.js, React, and Tailwind CSS to showcase projects and skills.",
-      tags: ["Next.js", "React", "Tailwind CSS", "Portfolio"],
-      imgSrc: "./Next JS Portfolio site.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://jisan.technomenia.com",
-      layout: '1-col',
-    },
-    {
-      year: "2023",
-      title: "WordPress Portfolio Site",
-      description: "A clean and professional portfolio website built on WordPress, using a custom theme to highlight projects, services, and contact information.",
-      tags: ["WordPress", "Portfolio", "CSS", "PHP"],
-      imgSrc: "./Wordpress portfolio site.jpg.png",
-      sourceCodeUrl: "#",
-      liveSiteUrl: "https://jisan.technomenia.com",
-      layout: '1-col',
-    }
+  year: "2025",
+  title: "School Website",
+  description: "A modern, responsive website for a local school, featuring event management, news updates, and an integrated blog using Next.js and MDX for content management.",
+  tags: ["Next.js", "Tailwind CSS", "MDX", "Education", "Responsive Design"],
+  imgSrc: "./School Website.png",
+  liveSiteUrl: "https://escl.openwindowbd.com/",
+  layout: "2-col",
+},
+{
+  year: "2025",
+  title: "Task Management Extension for Chrome",
+  description: "A Chrome extension that helps users manage their tasks efficiently with features like task categorization, deadlines, and reminders, built using React and Tailwind CSS.",
+  tags: ["Chrome Extension", "React", "Tailwind CSS", "Productivity", "Task Manager"],
+  imgSrc: "./Task Management extension for chrome.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://technomenia.com/",
+  layout: "1-col",
+},
+{
+  year: "2023",
+  title: "WordPress Newspaper Website",
+  description: "A dynamic news website built with WordPress, featuring custom post types, categories, and a user-friendly interface for easy content management and reader engagement.",
+  tags: ["WordPress", "PHP", "MySQL", "News Portal", "Responsive Design"],
+  imgSrc: "./News site.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://bhorerdut.com/",
+  layout: "1-col",
+},
+{
+  year: "2024",
+  title: "Complete School Management Apps",
+  description: "A comprehensive school management system with modules for student information, attendance, grading, and fee management, built with a focus on usability and scalability.",
+  tags: ["React", "Next.js", "Tailwind CSS", "School ERP", "Full Stack"],
+  imgSrc: "./School Management apps.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://escl.openwindowbd.com/login/",
+  layout: "1-col",
+},
+{
+  year: "2025",
+  title: "WordPress E-commerce Site",
+  description: "E-commerce website built on WordPress with custom themes and plugins, optimized for performance and SEO, providing a seamless shopping experience.",
+  tags: ["WordPress", "WooCommerce", "PHP", "E-commerce", "SEO Optimization"],
+  imgSrc: "./Wordpress ecommerce site.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://technomenia.com/",
+  layout: "1-col",
+},
+{
+  year: "2023",
+  title: "Task Management App",
+  description: "A full-stack task management application with user authentication, real-time database sync using Firebase, and drag-and-drop functionality.",
+  tags: ["React", "Firebase", "Tailwind CSS", "Authentication", "Drag-and-Drop"],
+  imgSrc: "./Wordpress ecommerce web.jpg.png",
+  sourceCodeUrl: "https://github.com/rafijuljisan/Chrome-Task-Extension",
+  layout: "2-col",
+},
+{
+  year: "2024",
+  title: "Automatic Photocard Download Plugin",
+  description: "A custom plugin, likely for WordPress, to automatically generate and allow users to download photocards based on user data.",
+  tags: ["WordPress", "PHP", "Plugin Development", "Automation", "Media Tools"],
+  imgSrc: "./Automatic Photocard downlooad plugin.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://bhorerdut.com",
+  layout: "1-col",
+},
+{
+  year: "2024",
+  title: "Next.js Portfolio Site",
+  description: "A modern, fast, and responsive personal portfolio website built using Next.js, React, and Tailwind CSS to showcase projects and skills.",
+  tags: ["Next.js", "React", "Tailwind CSS", "Portfolio", "Responsive Design"],
+  imgSrc: "./Next JS Portfolio site.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://jisan.technomenia.com",
+  layout: "1-col",
+},
+{
+  year: "2024",
+  title: "Consultancy Management App",
+  description: "A comprehensive web application for consultancy firms to manage clients, appointments, payments, and visa processing statuses.",
+  tags: ["Laravel", "React", "MySQL", "Management System", "Dashboard"],
+  imgSrc: "./Consultancy Management apps.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://app.openwindowbd.com/",
+  layout: "1-col",
+},
+{
+  year: "2023",
+  title: "Education Consultancy Website",
+  description: "A professional, responsive website for an education consultancy, showcasing services, partner universities, and student testimonials.",
+  tags: ["WordPress", "Elementor", "Responsive Design", "Consultancy", "Landing Page"],
+  imgSrc: "./Education Consultancy Website.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://openwindowbd.com",
+  layout: "1-col",
+},
+{
+  year: "2025",
+  title: "Finance Management Dashboard",
+  description: "A data-driven finance dashboard to track income, expenses, and investments, featuring charts and downloadable reports.",
+  tags: ["React", "Tailwind CSS", "Chart.js", "Finance", "Dashboard UI"],
+  imgSrc: "./Finance management.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://ac.openwindowbd.com",
+  layout: "2-col",
+},
+{
+  year: "2024",
+  title: "Automatic Recent Tab Loader for Chrome",
+  description: "A Google Chrome extension to improve productivity by automatically reloading recent or pinned tabs at user-defined intervals.",
+  tags: ["Chrome Extension", "JavaScript", "Automation", "Productivity", "Browser API"],
+  imgSrc: "./Automatic Recent Tab Loader for Chrome.png",
+  sourceCodeUrl: "https://github.com/rafijuljisan/Recent-Tab-Loader-Plugin",
+  layout: "1-col",
+},
+
   ];
 
   // --- REMOVED categories and filteredProjects logic ---
@@ -900,7 +880,71 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => (
     </div>
   </div>
 );
+// --- ADD THIS NEW COMPONENT ---
+const DesignPortfolioCTA = () => (
+  <section className="py-16 text-white">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Use the same card style for consistency */}
+      <div className="bg-gray-800 bg-opacity-50 backdrop-blur-md border-white/10 rounded-lg border border-gray-700 shadow-xl flex flex-col md:flex-row overflow-hidden">
+        
+        {/* Left Side: Image */}
+        {/* Create a simple 600x400 collage of your best designs and save it in /public as 'design-preview.jpg' */}
+        <div className="md:w-1/2">
+          <img 
+            src="./Design preview.png" 
+            alt="Design Portfolio Preview" 
+            className="w-full h-full object-cover"
+            onError={(e) => (e.currentTarget.src = 'https://placehold.co/600x400/333/FFF?text=My+Design+Work')}
+          />
+        </div>
 
+        {/* Right Side: Content */}
+        <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+          <div className="flex items-center gap-2 mb-3">
+            <Icon name="Palette" className="w-5 h-5 text-lime-400" />
+            <span className="text-sm font-medium text-lime-400 uppercase tracking-wider">
+              Visual & UI/UX Design
+            </span>
+          </div>
+          <h3 className="text-3xl font-bold text-white mb-4">
+            See My Design Portfolio
+          </h3>
+          <p className="text-gray-300 mb-8">
+            As a visual designer, I create brand identities, custom graphics, and pixel-perfect UI/UX mockups. My developer background ensures every design is feasible and functional.
+          </p>
+          
+          {/* --- FIXED Button Container --- */}
+          <div className="flex flex-col sm:flex-row">
+            {/* Behance Button (Primary) */}
+            <a
+              href="https://behance.net/mdjis" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-black bg-lime-400 hover:bg-lime-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 transition-all transform hover:scale-105 mb-4 sm:mb-0 sm:mr-4"
+            >
+              <Icon name="Behance" className="w-5 h-5 mr-2" />
+              View on Behance
+            </a>
+            
+            {/* Pinterest Button (Secondary) */}
+            <a
+              href="https://pinterest.ph/rafijuljisan" // <-- I got this from your CV!
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 border border-gray-600 text-base font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-all transform hover:scale-105"
+            >
+              <Icon name="Pinterest" className="w-5 h-5 mr-2" />
+              View on Pinterest
+            </a>
+          </div>
+          {/* --- END Button Container --- */}
+          
+        </div>
+      </div>
+    </div>
+  </section>
+);
+// --- END OF NEW COMPONENT ---
 // --- Contact Teaser Component ---
 const ContactTeaser = () => {
   return (
@@ -1226,6 +1270,7 @@ export default function App() {
           <Resume />
           <Technologies />
           <Projects />
+          <DesignPortfolioCTA />
           <ContactTeaser />
           <Blogs />
         </main>
