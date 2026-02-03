@@ -713,16 +713,6 @@ const Projects = () => {
   tags: ["React", "Firebase", "Tailwind CSS", "Authentication", "Drag-and-Drop"],
   imgSrc: "./Wordpress ecommerce web.jpg.png",
   sourceCodeUrl: "https://github.com/rafijuljisan/Chrome-Task-Extension",
-  layout: "2-col",
-},
-{
-  year: "2024",
-  title: "Automatic Photocard Download Plugin",
-  description: "A custom plugin, likely for WordPress, to automatically generate and allow users to download photocards based on user data.",
-  tags: ["WordPress", "PHP", "Plugin Development", "Automation", "Media Tools"],
-  imgSrc: "./Automatic Photocard downlooad plugin.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://bhorerdut.com",
   layout: "1-col",
 },
 {
@@ -763,7 +753,17 @@ const Projects = () => {
   imgSrc: "./Finance management.jpg.png",
   sourceCodeUrl: "#",
   liveSiteUrl: "https://ac.openwindowbd.com",
-  layout: "2-col",
+  layout: "1-col",
+},
+{
+  year: "2026",
+  title: "Banglar Somachar News Portal Website",
+  description: "A modern, responsive website for a Bangladeshi cultural organization showcasing events, news, and community resources.",
+  tags: ["Laravel", "Vue Js", "Responsive Design", "Cultural Organization", "Landing Page"],
+  imgSrc: "./BDSomacharsite.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://banglarsomachar.com/",
+  layout: "1-col",
 },
 {
   year: "2024",
@@ -775,6 +775,26 @@ const Projects = () => {
   layout: "1-col",
 },
 
+{
+  year: "2024",
+  title: "Automatic Photocard Download Plugin",
+  description: "A custom plugin, likely for WordPress, to automatically generate and allow users to download photocards based on user data.",
+  tags: ["WordPress", "PHP", "Plugin Development", "Automation", "Media Tools"],
+  imgSrc: "./Automatic Photocard downlooad plugin.jpg.png",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://bhorerdut.com",
+  layout: "1-col",
+},
+{
+  year: "2026",
+  title: "Education Consultancy Website Design",
+  description: "A modern, responsive website for an education consultancy, showcasing services, partner universities, and student testimonials.",
+  tags: ["Laravel", "Vue Js", "Responsive Design", "Consultancy", "Landing Page"],
+  imgSrc: "./opnewwebsite.jpg",
+  sourceCodeUrl: "#",
+  liveSiteUrl: "https://web.openwindowbd.com",
+  layout: "1-col",
+},
   ];
 
   // --- REMOVED categories and filteredProjects logic ---
@@ -916,7 +936,7 @@ const DesignPortfolioCTA = () => (
           <div className="flex flex-col sm:flex-row">
             {/* Behance Button (Primary) */}
             <a
-              href="https://behance.net/mdjis" 
+              href="https://behance.net/mdjs" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-black bg-lime-400 hover:bg-lime-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 transition-all transform hover:scale-105 mb-4 sm:mb-0 sm:mr-4"
@@ -1116,35 +1136,275 @@ const Footer = () => {
 // --- ADD THIS NEW PRELOADER COMPONENT ---
 // --- REPLACE OLD PRELOADER WITH THIS ---
 const Preloader = ({ step, isFading }: { step: number; isFading: boolean }) => {
-  const bootLines = [
-    "Booting JisanOS v2.5...",
-    "Initializing creative core...",
-    "Loading developer modules... [OK]",
-    "Compiling design assets... [OK]",
-    "Connecting to the matrix... [CONNECTED]",
-    "Welcome."
-  ];
-
   return (
     <div
       className={`fixed inset-0 z-[100] flex items-center justify-center bg-black
-                  text-lime-400 font-mono
-                  transition-opacity duration-500
-                  ${isFading ? 'opacity-0' : 'opacity-100'}`}
+                  transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
     >
-      <div className="w-full max-w-lg px-4">
-        {bootLines.map((line, index) => (
-          // Conditionally render each line based on the 'step'
-          <div key={index} className={`flex items-center ${step > index ? 'opacity-100' : 'opacity-0'}`}>
-            <span className="text-gray-400 mr-2">&gt;</span>
-            <p className="text-sm md:text-base">{line}</p>
-            {/* Show blinking cursor on the last visible line */}
-            {step === index + 1 && step < bootLines.length && (
-              <span className="w-2 h-4 bg-lime-400 animate-blink ml-2"></span>
-            )}
-          </div>
+      {/* Animated particle background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white rounded-full animate-float-particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${3 + Math.random() * 4}s`,
+              opacity: 0.3
+            }}
+          />
         ))}
       </div>
+
+      <div className="relative z-10">
+        {/* Portal Rings - Enhanced with gradient borders */}
+        <div className="relative w-96 h-96 flex items-center justify-center">
+          {/* Outer Glow Effect */}
+          <div 
+            className={`absolute inset-0 rounded-full transition-all duration-1000
+                       ${step >= 1 ? 'opacity-40' : 'opacity-0'}`}
+            style={{
+              background: 'radial-gradient(circle, rgba(168,85,247,0.3) 0%, transparent 70%)',
+              filter: 'blur(40px)',
+              animation: step >= 1 ? 'pulse-glow 3s ease-in-out infinite' : 'none'
+            }}
+          />
+
+          {/* Portal Rings */}
+          {[
+            { size: 320, color: '#06b6d4', delay: 0, duration: 8, blur: 15 },
+            { size: 240, color: '#8b5cf6', delay: 0.2, duration: 6, blur: 12 },
+            { size: 160, color: '#ec4899', delay: 0.4, duration: 4, blur: 10 },
+            { size: 80, color: '#10b981', delay: 0.6, duration: 3, blur: 8 }
+          ].map((ring, index) => (
+            <div
+              key={index}
+              className={`absolute rounded-full transition-all duration-1000 ease-out`}
+              style={{
+                width: step >= index + 1 ? `${ring.size}px` : '0px',
+                height: step >= index + 1 ? `${ring.size}px` : '0px',
+                opacity: step >= index + 1 ? 1 : 0,
+                border: `3px solid ${ring.color}`,
+                boxShadow: `
+                  0 0 20px ${ring.color},
+                  0 0 40px ${ring.color},
+                  inset 0 0 20px ${ring.color}
+                `,
+                animation: step >= index + 1 ? `spin-portal-${index} ${ring.duration}s linear infinite, pulse-ring 2s ease-in-out infinite` : 'none',
+                transitionDelay: `${ring.delay}s`,
+                filter: `blur(${ring.blur}px)`
+              }}
+            />
+          ))}
+
+          {/* Energy Particles orbiting */}
+          {step >= 3 && (
+            <>
+              {[0, 1, 2, 3, 4, 5].map((i) => (
+                <div
+                  key={`particle-${i}`}
+                  className="absolute w-3 h-3 rounded-full animate-orbit-particle"
+                  style={{
+                    background: ['#06b6d4', '#8b5cf6', '#ec4899', '#10b981', '#f59e0b', '#06b6d4'][i],
+                    boxShadow: `0 0 15px ${['#06b6d4', '#8b5cf6', '#ec4899', '#10b981', '#f59e0b', '#06b6d4'][i]}`,
+                    animationDelay: `${i * 0.3}s`,
+                    animationDuration: '4s'
+                  }}
+                />
+              ))}
+            </>
+          )}
+
+          {/* Center Core - Glowing */}
+          <div 
+            className={`absolute w-32 h-32 rounded-full transition-all duration-1000
+                       ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}
+            style={{
+              background: 'radial-gradient(circle, rgba(168,85,247,0.8) 0%, rgba(236,72,153,0.4) 50%, transparent 100%)',
+              boxShadow: '0 0 60px rgba(168,85,247,0.8), 0 0 100px rgba(236,72,153,0.6)',
+              animation: 'pulse-core 2s ease-in-out infinite'
+            }}
+          />
+
+          {/* Center Name with WHITE COLOR & Colorful Glow */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <h1 
+              className={`text-6xl md:text-8xl font-bold mb-2 text-white transition-all duration-1000
+                         ${step >= 3 ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-50 rotate-180'}`}
+              style={{
+                textShadow: `
+                  0 0 20px rgba(6,182,212,0.8),
+                  0 0 40px rgba(139,92,246,0.6),
+                  0 0 60px rgba(236,72,153,0.5),
+                  0 0 80px rgba(168,85,247,0.4),
+                  0 5px 30px rgba(0,0,0,0.5)
+                `,
+                filter: 'drop-shadow(0 0 30px rgba(168,85,247,0.6))',
+                letterSpacing: '0.1em'
+              }}
+            >
+              JISAN
+            </h1>
+
+            {/* Animated underline with rainbow gradient */}
+            <div 
+              className={`h-1 rounded-full transition-all duration-700
+                         ${step >= 4 ? 'w-48 opacity-100' : 'w-0 opacity-0'}`}
+              style={{
+                background: 'linear-gradient(90deg, #06b6d4, #8b5cf6, #ec4899, #06b6d4)',
+                backgroundSize: '200% 100%',
+                boxShadow: '0 0 15px rgba(168,85,247,0.8), 0 0 30px rgba(236,72,153,0.6)',
+                animation: step >= 4 ? 'shimmer 2s ease-in-out infinite, gradient-slide 3s linear infinite' : 'none'
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Developer Badge with Holographic Effect */}
+        <div 
+          className={`text-center mt-12 transition-all duration-1000
+                     ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        >
+          <div className="relative inline-block">
+            {/* Holographic glow behind badge */}
+            <div 
+              className="absolute inset-0 rounded-full blur-xl opacity-60"
+              style={{
+                background: 'linear-gradient(135deg, #06b6d4, #a855f7, #ec4899)',
+                animation: 'pulse-glow 2s ease-in-out infinite'
+              }}
+            />
+            
+            {/* Badge */}
+            <div className="relative px-8 py-3 rounded-full border-2 border-lime-400 bg-black/50 backdrop-blur-sm"
+                 style={{ boxShadow: '0 0 30px rgba(132,204,22,0.4), inset 0 0 20px rgba(132,204,22,0.1)' }}>
+              <div className="flex items-center gap-3">
+                {/* Animated icon */}
+                <div className="flex gap-1">
+                  {[0, 1, 2].map((i) => (
+                    <div
+                      key={i}
+                      className="w-1 h-4 bg-lime-400 rounded-full animate-pulse"
+                      style={{ 
+                        animationDelay: `${i * 0.2}s`,
+                        boxShadow: '0 0 10px rgba(132,204,22,0.8)'
+                      }}
+                    />
+                  ))}
+                </div>
+                
+                <span className="text-lime-400 font-semibold text-lg tracking-wider">
+                  FULL STACK DEVELOPER
+                </span>
+
+                {/* Cursor blink */}
+                <span className="w-0.5 h-5 bg-lime-400 animate-blink ml-1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Loading percentage */}
+        {step >= 4 && (
+          <div className="text-center mt-6">
+            <span 
+              className="text-sm text-gray-400 font-mono"
+              style={{
+                textShadow: '0 0 10px rgba(168,85,247,0.5)'
+              }}
+            >
+              Initializing... {Math.min(step * 20, 100)}%
+            </span>
+          </div>
+        )}
+      </div>
+
+      <style jsx>{`
+        @keyframes spin-portal-0 {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @keyframes spin-portal-1 {
+          from { transform: rotate(360deg); }
+          to { transform: rotate(0deg); }
+        }
+        @keyframes spin-portal-2 {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @keyframes spin-portal-3 {
+          from { transform: rotate(360deg); }
+          to { transform: rotate(0deg); }
+        }
+        
+        @keyframes pulse-ring {
+          0%, 100% { 
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% { 
+            transform: scale(1.05);
+            opacity: 0.8;
+          }
+        }
+        
+        @keyframes pulse-core {
+          0%, 100% { 
+            transform: scale(1);
+            opacity: 0.8;
+          }
+          50% { 
+            transform: scale(1.15);
+            opacity: 1;
+          }
+        }
+        
+        @keyframes pulse-glow {
+          0%, 100% { opacity: 0.4; }
+          50% { opacity: 0.8; }
+        }
+        
+        @keyframes gradient-slide {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 200% 50%; }
+        }
+        
+        @keyframes shimmer {
+          0%, 100% { opacity: 0.6; }
+          50% { opacity: 1; }
+        }
+        
+        @keyframes float-particle {
+          0%, 100% { 
+            transform: translateY(0px) translateX(0px);
+            opacity: 0.1;
+          }
+          50% { 
+            transform: translateY(-30px) translateX(15px);
+            opacity: 0.4;
+          }
+        }
+        
+        @keyframes orbit-particle {
+          0% { 
+            transform: rotate(0deg) translateX(140px) rotate(0deg);
+          }
+          100% { 
+            transform: rotate(360deg) translateX(140px) rotate(-360deg);
+          }
+        }
+        
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+        
+        .animate-float-particle { animation: float-particle 4s ease-in-out infinite; }
+        .animate-orbit-particle { animation: orbit-particle 4s linear infinite; }
+        .animate-blink { animation: blink 1s infinite; }
+      `}</style>
     </div>
   );
 };

@@ -5,8 +5,8 @@ import "./globals.css"; // <-- THIS IS THE CRITICAL LINE
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ripon - Full Stack Web Developer",
-  description: "Creative designer and developer based in New York, USA.",
+  title: "Jisan - Web Developer & Designer",
+  description: "Creative designer and developer based in Bangladesh.",
 };
 
 export default function RootLayout({

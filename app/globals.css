@@ -57,3 +57,16 @@
 .blur-extreme {
   filter: blur(150px);
 }
+/* Smooth scrollbar hide for cleaner look during preload */
+body.loading {
+  overflow: hidden;
+}
+
+/* Additional gradient animation support */
+@supports (-webkit-background-clip: text) {
+  .gradient-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
