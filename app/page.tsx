@@ -653,151 +653,20 @@ const TechIcon = ({ name, icon }: TechIconProps) => (
 
 // --- Projects (Works) Component ---
 const Projects = () => {
-  // --- REMOVED filter state ---
+  const [allProjects, setAllProjects] = useState<ProjectProps[]>([]);
 
-  // --- REPLACED 'projects' with 'allProjects' and expanded ---
-  const allProjects: ProjectProps[] = [
-    {
-  year: "2025",
-  title: "School Website",
-  description: "A modern, responsive website for a local school, featuring event management, news updates, and an integrated blog using Next.js and MDX for content management.",
-  tags: ["Next.js", "Tailwind CSS", "MDX", "Education", "Responsive Design"],
-  imgSrc: "./School Website.png",
-  liveSiteUrl: "https://escl.openwindowbd.com/",
-  layout: "2-col",
-},
-{
-  year: "2025",
-  title: "Task Management Extension for Chrome",
-  description: "A Chrome extension that helps users manage their tasks efficiently with features like task categorization, deadlines, and reminders, built using React and Tailwind CSS.",
-  tags: ["Chrome Extension", "React", "Tailwind CSS", "Productivity", "Task Manager"],
-  imgSrc: "./Task Management extension for chrome.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://technomenia.com/",
-  layout: "1-col",
-},
-{
-  year: "2023",
-  title: "WordPress Newspaper Website",
-  description: "A dynamic news website built with WordPress, featuring custom post types, categories, and a user-friendly interface for easy content management and reader engagement.",
-  tags: ["WordPress", "PHP", "MySQL", "News Portal", "Responsive Design"],
-  imgSrc: "./News site.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://bhorerdut.com/",
-  layout: "1-col",
-},
-{
-  year: "2024",
-  title: "Complete School Management Apps",
-  description: "A comprehensive school management system with modules for student information, attendance, grading, and fee management, built with a focus on usability and scalability.",
-  tags: ["React", "Next.js", "Tailwind CSS", "School ERP", "Full Stack"],
-  imgSrc: "./School Management apps.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://escl.openwindowbd.com/login/",
-  layout: "1-col",
-},
-{
-  year: "2025",
-  title: "WordPress E-commerce Site",
-  description: "E-commerce website built on WordPress with custom themes and plugins, optimized for performance and SEO, providing a seamless shopping experience.",
-  tags: ["WordPress", "WooCommerce", "PHP", "E-commerce", "SEO Optimization"],
-  imgSrc: "./Wordpress ecommerce site.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://technomenia.com/",
-  layout: "1-col",
-},
-{
-  year: "2023",
-  title: "Task Management App",
-  description: "A full-stack task management application with user authentication, real-time database sync using Firebase, and drag-and-drop functionality.",
-  tags: ["React", "Firebase", "Tailwind CSS", "Authentication", "Drag-and-Drop"],
-  imgSrc: "./Wordpress ecommerce web.jpg.png",
-  sourceCodeUrl: "https://github.com/rafijuljisan/Chrome-Task-Extension",
-  layout: "1-col",
-},
-{
-  year: "2024",
-  title: "Next.js Portfolio Site",
-  description: "A modern, fast, and responsive personal portfolio website built using Next.js, React, and Tailwind CSS to showcase projects and skills.",
-  tags: ["Next.js", "React", "Tailwind CSS", "Portfolio", "Responsive Design"],
-  imgSrc: "./Next JS Portfolio site.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://jisan.technomenia.com",
-  layout: "1-col",
-},
-{
-  year: "2024",
-  title: "Consultancy Management App",
-  description: "A comprehensive web application for consultancy firms to manage clients, appointments, payments, and visa processing statuses.",
-  tags: ["Laravel", "React", "MySQL", "Management System", "Dashboard"],
-  imgSrc: "./Consultancy Management apps.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://app.openwindowbd.com/",
-  layout: "1-col",
-},
-{
-  year: "2023",
-  title: "Education Consultancy Website",
-  description: "A professional, responsive website for an education consultancy, showcasing services, partner universities, and student testimonials.",
-  tags: ["WordPress", "Elementor", "Responsive Design", "Consultancy", "Landing Page"],
-  imgSrc: "./Education Consultancy Website.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://openwindowbd.com",
-  layout: "1-col",
-},
-{
-  year: "2025",
-  title: "Finance Management Dashboard",
-  description: "A data-driven finance dashboard to track income, expenses, and investments, featuring charts and downloadable reports.",
-  tags: ["React", "Tailwind CSS", "Chart.js", "Finance", "Dashboard UI"],
-  imgSrc: "./Finance management.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://ac.openwindowbd.com",
-  layout: "1-col",
-},
-{
-  year: "2026",
-  title: "Banglar Somachar News Portal Website",
-  description: "A modern, responsive website for a Bangladeshi cultural organization showcasing events, news, and community resources.",
-  tags: ["Laravel", "Vue Js", "Responsive Design", "Cultural Organization", "Landing Page"],
-  imgSrc: "./BDSomacharsite.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://banglarsomachar.com/",
-  layout: "1-col",
-},
-{
-  year: "2024",
-  title: "Automatic Recent Tab Loader for Chrome",
-  description: "A Google Chrome extension to improve productivity by automatically reloading recent or pinned tabs at user-defined intervals.",
-  tags: ["Chrome Extension", "JavaScript", "Automation", "Productivity", "Browser API"],
-  imgSrc: "./Automatic Recent Tab Loader for Chrome.png",
-  sourceCodeUrl: "https://github.com/rafijuljisan/Recent-Tab-Loader-Plugin",
-  layout: "1-col",
-},
-
-{
-  year: "2024",
-  title: "Automatic Photocard Download Plugin",
-  description: "A custom plugin, likely for WordPress, to automatically generate and allow users to download photocards based on user data.",
-  tags: ["WordPress", "PHP", "Plugin Development", "Automation", "Media Tools"],
-  imgSrc: "./Automatic Photocard downlooad plugin.jpg.png",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://bhorerdut.com",
-  layout: "1-col",
-},
-{
-  year: "2026",
-  title: "Education Consultancy Website Design",
-  description: "A modern, responsive website for an education consultancy, showcasing services, partner universities, and student testimonials.",
-  tags: ["Laravel", "Vue Js", "Responsive Design", "Consultancy", "Landing Page"],
-  imgSrc: "./opnewwebsite.jpg",
-  sourceCodeUrl: "#",
-  liveSiteUrl: "https://web.openwindowbd.com",
-  layout: "1-col",
-},
-  ];
-
-  // --- REMOVED categories and filteredProjects logic ---
+  useEffect(() => {
+    fetch("/api/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        setAllProjects(
+          data.map((p: any) => ({
+            ...p,
+            tags: JSON.parse(p.tags),
+          }))
+        );
+      });
+  }, []);
 
   return (
     <section id="projects" className="py-16 text-white">
@@ -813,12 +682,10 @@ const Projects = () => {
 
         {/* --- UPDATED GRID to lg:grid-cols-3 --- */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* --- UPDATED THIS LINE to use allProjects --- */}
           {allProjects.map((project) => (
             <ProjectCard 
               key={project.title} 
               project={project} 
-              // --- UPDATED CLASSNAME to use layout prop ---
               className={project.layout === '2-col' ? 'lg:col-span-2' : 'lg:col-span-1'} 
             />
           ))}
@@ -1143,15 +1010,22 @@ const Preloader = ({ step, isFading }: { step: number; isFading: boolean }) => {
     >
       {/* Animated particle background */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(30)].map((_, i) => (
+        {[
+          [10,20],[25,75],[50,10],[80,40],[15,60],
+          [90,25],[35,85],[60,50],[5,45],[70,15],
+          [45,90],[20,35],[85,70],[30,5],[55,80],
+          [95,55],[40,30],[65,95],[8,65],[75,20],
+          [22,48],[58,72],[88,12],[33,38],[48,62],
+          [72,88],[18,8],[62,42],[38,78],[82,32],
+        ].map(([left, top], i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-white rounded-full animate-float-particle"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 4}s`,
+              left: `${left}%`,
+              top: `${top}%`,
+              animationDelay: `${(i % 6) * 0.5}s`,
+              animationDuration: `${3 + (i % 4)}s`,
               opacity: 0.3
             }}
           />
